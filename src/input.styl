@@ -1,20 +1,47 @@
 .input
+  @extend .avenir
   display: block;
-  margin: 1rem;
-  padding: .5em .6em;
-  color: $grey;
+  padding: 1rem 1rem 1rem 2rem;
+  margin: .3em .6em;
+  color: $midgrey
   width: 80%;
   max-width:50rem;
-  font-size: 1.6rem;
-  letter-spacing: .05em
-  line-height: 1.2rem;
+  font-size: 2rem;
+  // letter-spacing: .05em
+  line-height: 1rem;
+  // font-size: 3rem;
+  line-height: 1.25
+  // letter-spacing: .05em
   outline: none
   border: none;
   border-radius: 0.4rem;
-  box-shadow: 0px 0px 2px 0px rgba( 0, 0, 0, 0.2 );
+  // font-style: italic
+  box-shadow: 0px 0px 2px 0px rgba( 0, 0, 0, 0.5 );
   transition: box-shadow 300ms
+  &:hover
+    box-shadow: 1px 1px 4px 0px rgba( 0, 0, 0, 0.2 )
   &:focus
-    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.3 )
-    color:$navy
+    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 )
+    color:$darkblue
+    border-bottom:2px solid $darkblue
   // &:hover
   //   box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.3 );
+
+.button
+  @extend .avenir
+  background-color:$blue
+  color:$lightgrey
+  min-width:10rem;
+  min-height:2rem;
+  font-size:1.8rem;
+  margin:1rem;
+  padding:0.5rem;
+  cursor:pointer;
+  // outline: none
+  border: none;
+  border-radius:3px;
+  box-shadow: 0px 0px 2px 0px rgba( 0, 0, 0, 0.5 );
+  transition: box-shadow 100ms
+  &:hover
+    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 )
+    border-bottom:2px solid $darkblue

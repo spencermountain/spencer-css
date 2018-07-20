@@ -1,13 +1,16 @@
 @import "colors.styl"
 @import "hovers.styl"
-@import "input.styl"
 @import "text.styl"
+@import "spacing.styl"
 @import "flex.styl"
+@import "input.styl"
 
 .link
   color: $blue
   text-decoration: none
   cursor:pointer
+  &:hover
+    border-bottom:2px solid $blue
 
 .rounded
   border-radius:.5rem
@@ -24,3 +27,13 @@
    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
 .img
   max-width:100%
+
+.body
+  color:$grey
+  @extend .offwhite
+  @extend .flex
+  @extend .avenir
+
+.middle
+  text-align: center
+  max-width:60rem;

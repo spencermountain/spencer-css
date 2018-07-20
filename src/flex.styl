@@ -7,12 +7,43 @@
 .flex-col
   @extend .flex
   flex-direction: column;
+.flex-right
+    width:100%;
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center
+    flex-direction: row;
+.flex-10
+  flex:10%
+.flex-15
+  flex:15%
+.flex-20
+  flex:20%
+.flex-25
+  flex:25%
+.flex-30
+  flex:30%
+.flex-50
+  flex:50%
+.flex-75
+  flex:75%
+.flex-80
+  flex:80%
 
-.dummy
-  padding: 1rem;
-  margin: 1rem;
-  width:80%;
+.medium
+  width:100%;
   min-width:12rem;
   height:80%;
   min-height:5rem;
+  padding: 0.8rem;
+  margin: 0.8rem;
   border-radius:.5rem
+.small
+  @extend .medium
+  width:50%;
+  min-width:6rem;
+  min-height:3rem;
+
+.dummy
+  @extend .medium
