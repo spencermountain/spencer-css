@@ -1,0 +1,28 @@
+{
+  "name": "spencer-css",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/stylus ./src/index.styl -o ./builds/spencer.css",
+    "watch": "./node_modules/.bin/stylus -w ./src/index.styl -o ./builds/spencer.css",
+    "min": "./node_modules/.bin/uglifycss ./builds/spencer.css >./builds/spencer.min.css",
+    "start": "browser-sync start --server --files './demo' --index './demo/index.html'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencermountain/spencer-css.git"
+  },
+  "author": "spencermountain@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spencermountain/spencer-css/issues"
+  },
+  "homepage": "https://github.com/spencermountain/spencer-css#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.5",
+    "stylus": "^0.54.5",
+    "uglifycss": "0.0.29"
+  }
+}
