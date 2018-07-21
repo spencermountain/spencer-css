@@ -2,7 +2,7 @@
   "name": "spencer-css",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "builds/spencer.min.css",
   "scripts": {
     "build": "./node_modules/.bin/stylus ./src/index.styl -o ./builds/spencer.css",
     "watch": "./node_modules/.bin/stylus -w ./src/index.styl -o ./builds/spencer.css",
