@@ -1,6 +1,22 @@
 
 b
-  color:$darkblue;
+  color:$bluegrey;
+i
+  color:$midgrey
+
+.bold
+  font-weight: bold
+  color:$grey;
+.italic
+  color:$midgrey
+  font-style: italic;
+.oblique
+  color:$midgrey
+  font-style: oblique;
+.italics
+  @extend .italic
+.emph
+  letter-spacing:0.1rem;
 .title
   font-size: 3rem
   line-height: 1.25
@@ -10,11 +26,19 @@ b
 .nobreak
   white-space: nowrap;
 
-.bold
-  font-weight: bold
-  color:$grey;
+.link
+  color: $blue
+  text-decoration: none
+  cursor:pointer
+  &:hover
+    border-bottom:2px solid $blue
+a
+  @extend .link
+  
 .center
   text-align: center;
+.justify
+  text-align: justify;
 .left
   text-align: left;
 .right

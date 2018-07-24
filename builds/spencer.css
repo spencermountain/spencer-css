@@ -16,30 +16,60 @@
 .pink {
   color: #e6b8b3;
 }
-.olive {
+.olive,
+.code {
   color: #7f9c6c;
+}
+.rose {
+  color: #e6b4b3;
 }
 .brown {
   color: #9c896c;
 }
+.lightgreen {
+  color: #66ccac;
+}
+.darkgreen {
+  color: #339957;
+}
+.darkbrown {
+  color: #605439;
+}
+.burnt {
+  color: #603a39;
+}
+.beige {
+  color: #e6d7b3;
+}
 .darkblue {
   color: #6c7f9c;
+}
+.dimblue {
+  color: #949a9e;
+}
+.lightblue {
+  color: #66a8cc;
+}
+.orange {
+  color: #cc8a66;
+}
+.purple {
+  color: #d8b3e6;
 }
 .grey {
   color: #4d4d4d;
 }
-.offwhite,
-.body {
+.offwhite {
   color: #fbfbfb;
 }
 .lightgrey {
   color: #e9edec;
 }
 .darkgrey {
-  color: #667c92;
+  color: #443d3d;
 }
 .offblack {
-  color: #514b4b;
+  color: #333;
 }
 .blueback {
   background-color: #69c;
@@ -71,14 +101,69 @@
 .darkblueback {
   background-color: #6c7f9c;
 }
-.offwhiteback {
+.orangeback {
+  background-color: #cc8a66;
+}
+.purpleback {
+  background-color: #d8b3e6;
+}
+.lightblueback {
+  background-color: #66a8cc;
+}
+.lightgreenback {
+  background-color: #66ccac;
+}
+.darkbrownback {
+  background-color: #605439;
+}
+.burntback {
+  background-color: #603a39;
+}
+.roseback {
+  background-color: #e6b4b3;
+}
+.dimblueback {
+  background-color: #949a9e;
+}
+.beigeback {
+  background-color: #e6d7b3;
+}
+.offwhiteback,
+.body {
   background-color: #fbfbfb;
+  color: #606c74;
+}
+.lightgreyback,
+.code {
+  background-color: #e9edec;
+  color: #606c74;
+}
+.dimgreyback {
+  background-color: #d7d5d2;
+  color: #606c74;
+}
+.midgreyback {
+  background-color: #949a9e;
+}
+.bluegreyback {
+  background-color: #606c74;
+  color: #d7d5d2;
+}
+.greyback {
+  background-color: #4d4d4d;
+  color: #d7d5d2;
+}
+.slategreyback {
+  background-color: #51433e;
+  color: #d7d5d2;
+}
+.darkgreyback {
+  background-color: #443d3d;
+  color: #d7d5d2;
 }
 .offblackback {
-  background-color: #514b4b;
-}
-.lightgreyback {
-  background-color: #e9edec;
+  background-color: #333;
+  color: #949a9e;
 }
 .shadow-hover {
   cursor: pointer;
@@ -116,23 +201,51 @@
   transition: opacity 0.15s ease-out;
 }
 b {
-  color: #6c7f9c;
+  color: #606c74;
 }
-.title {
-  font-size: 3rem;
-  line-height: 1.25;
-  letter-spacing: 0.05em;
-  color: #514b4b;
-}
-.nobreak {
-  white-space: nowrap;
+i {
+  color: #949a9e;
 }
 .bold {
   font-weight: bold;
   color: #4d4d4d;
 }
+.italic,
+.italics {
+  color: #949a9e;
+  font-style: italic;
+}
+.oblique {
+  color: #949a9e;
+  font-style: oblique;
+}
+.emph {
+  letter-spacing: 0.1rem;
+}
+.title {
+  font-size: 3rem;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+.nobreak {
+  white-space: nowrap;
+}
+.link,
+a {
+  color: #69c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover,
+a:hover {
+  border-bottom: 2px solid #69c;
+}
 .center {
   text-align: center;
+}
+.justify {
+  text-align: justify;
 }
 .left {
   text-align: left;
@@ -164,62 +277,151 @@ b {
 .avenir,
 .input,
 .button,
+select,
 .body {
   font-family: 'avenir next', avenir, sans-serif;
 }
 .baskerville {
   font-family: baskerville, serif;
 }
-.pa0 {
+.p0 {
   padding: 0;
 }
-.pa1 {
+.p1,
+.code {
   padding: 0.25rem;
 }
-.pa2 {
+.p2 {
   padding: 0.5rem;
 }
-.pa3 {
+.p3 {
   padding: 1rem;
 }
-.pa4 {
+.p4 {
   padding: 2rem;
 }
-.pa5 {
+.p5 {
   padding: 4rem;
 }
-.pa6 {
+.p6 {
   padding: 8rem;
 }
-.pa7 {
+.p7 {
   padding: 16rem;
 }
-.ma0 {
+.m0 {
   margin: 0;
 }
-.ma1 {
+.m1,
+.code {
   margin: 0.25rem;
 }
-.ma2 {
+.m2 {
   margin: 0.5rem;
 }
-.ma3 {
+.m3 {
   margin: 1rem;
 }
-.ma4 {
+.m4 {
   margin: 2rem;
 }
-.ma5 {
+.m5 {
   margin: 4rem;
 }
-.ma6 {
+.m6 {
   margin: 8rem;
 }
-.ma7 {
+.m7 {
   margin: 16rem;
 }
+.ml0 {
+  margin-left: 0;
+}
+.ml1 {
+  margin-left: 0.25rem;
+}
+.ml2 {
+  margin-left: 0.5rem;
+}
+.ml3 {
+  margin-left: 1rem;
+}
+.ml4 {
+  margin-left: 2rem;
+}
+.ml5 {
+  margin-left: 4rem;
+}
+.ml6 {
+  margin-left: 8rem;
+}
+.ml7 {
+  margin-left: 16rem;
+}
+.mr1 {
+  margin-right: 0.25rem;
+}
+.mr2 {
+  margin-right: 0.5rem;
+}
+.mr3 {
+  margin-right: 1rem;
+}
+.mr4 {
+  margin-right: 2rem;
+}
+.mr5 {
+  margin-right: 4rem;
+}
+.mr6 {
+  margin-right: 8rem;
+}
+.mr7 {
+  margin-right: 16rem;
+}
+.space {
+  min-width: 3rem;
+  min-height: 3rem;
+}
+.space1 {
+  min-width: 1rem;
+  min-height: 1rem;
+}
+.space2 {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+.space3 {
+  min-width: 4rem;
+  min-height: 4rem;
+}
+.space4 {
+  min-width: 8rem;
+  min-height: 8rem;
+}
+.space5 {
+  min-width: 12rem;
+  min-height: 12rem;
+}
+.space6 {
+  min-width: 16rem;
+  min-height: 16rem;
+}
+.space7 {
+  min-width: 32rem;
+  min-height: 32rem;
+}
 .flex,
-.flex-col,
+.row,
+.flexcol,
+.col,
+.flextop,
+.flexbottom,
+.flexleft,
+.flexright,
+.flexcenter,
+.flexmiddle,
+.middle,
 .body {
   display: flex;
   justify-content: space-around;
@@ -227,56 +429,278 @@ b {
   text-align: center;
   flex-direction: row;
 }
-.flex-col {
+.flexcol,
+.col,
+.flextop,
+.flexbottom {
   flex-direction: column;
 }
-.flex-right {
-  width: 100%;
-  display: flex;
+.flextop {
+  justify-content: flex-start;
+}
+.flexbottom {
   justify-content: flex-end;
-  align-items: center;
+}
+.flexleft {
+  justify-content: flex-start;
+}
+.flexright {
+  justify-content: flex-end;
+}
+.flexcenter,
+.flexmiddle,
+.middle {
+  justify-content: center;
+}
+.spacebetween {
+  justify-content: space-between;
+}
+.grow,
+.megrow {
+  flex: 1;
+  align-self: stretch;
+}
+.meleft {
+  align-self: flex-start;
+}
+.meright {
+  align-self: flex-end;
+}
+.pushup {
+  align-self: flex-start;
+}
+.pushdown {
+  align-self: flex-end;
+}
+.exist,
+.flex10,
+.flex15,
+.flex20,
+.flex25,
+.flex30,
+.flex50,
+.flex75,
+.flex80,
+.flex90,
+.flex100,
+.me10,
+.me15,
+.me20,
+.me25,
+.me30,
+.me50,
+.me75,
+.me80,
+.me90,
+.me100,
+.circle {
+  min-height: 1rem;
+  min-width: 1rem;
+}
+.flex10,
+.me10 {
+  max-width: 10%;
+  width: 10%;
+}
+.flex15,
+.me15 {
+  max-width: 15%;
+  width: 15%;
+}
+.flex20,
+.me20 {
+  max-width: 20%;
+  width: 20%;
+}
+.flex25,
+.me25 {
+  max-width: 25%;
+  width: 25%;
+}
+.flex30,
+.me30 {
+  max-width: 30%;
+  width: 30%;
+}
+.flex50,
+.me50 {
+  max-width: 50%;
+  width: 50%;
+}
+.flex75,
+.me75 {
+  max-width: 75%;
+  width: 75%;
+}
+.flex80,
+.me80 {
+  max-width: 80%;
+  width: 80%;
+}
+.flex90,
+.me90 {
+  max-width: 90%;
+  width: 90%;
+}
+.flex100,
+.me100 {
+  max-width: 100%;
+  width: 100%;
+}
+.h0 {
+  min-height: 0;
+}
+.h1 {
+  min-height: 0.25rem;
+}
+.h2 {
+  min-height: 0.5rem;
+}
+.h3 {
+  min-height: 1rem;
+}
+.h4 {
+  min-height: 2rem;
+}
+.h5 {
+  min-height: 4rem;
+}
+.h6 {
+  min-height: 8rem;
+}
+.h7 {
+  min-height: 16rem;
+}
+.w0 {
+  min-width: 0;
+}
+.w1 {
+  min-width: 0.25rem;
+}
+.w2 {
+  min-width: 0.5rem;
+}
+.w3 {
+  min-width: 1rem;
+}
+.w4 {
+  min-width: 2rem;
+}
+.w5 {
+  min-width: 4rem;
+}
+.w6 {
+  min-width: 8rem;
+}
+.w7 {
+  min-width: 16rem;
+}
+.onecol {
   text-align: center;
-  flex-direction: row;
+  max-width: 60rem;
+  min-width: 40rem;
+  min-height: 3rem;
 }
-.flex-10 {
-  flex: 10%;
-}
-.flex-15 {
-  flex: 15%;
-}
-.flex-20 {
-  flex: 20%;
-}
-.flex-25 {
-  flex: 25%;
-}
-.flex-30 {
-  flex: 30%;
-}
-.flex-50 {
-  flex: 50%;
-}
-.flex-75 {
-  flex: 75%;
-}
-.flex-80 {
-  flex: 80%;
+.full {
+  flex: 1;
+  width: 100%;
 }
 .medium,
 .small,
-.dummy {
+.tiny {
   width: 100%;
   min-width: 12rem;
   height: 80%;
   min-height: 5rem;
-  padding: 0.8rem;
-  margin: 0.8rem;
+  padding: 0.5rem;
+  margin: 0.1rem;
   border-radius: 0.5rem;
 }
 .small {
   width: 50%;
   min-width: 6rem;
   min-height: 3rem;
+}
+.tiny {
+  width: 50%;
+  min-width: 3rem;
+  min-height: 1.5rem;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
+.indent {
+  margin-left: 3rem;
+}
+.cheatleft {
+  margin-left: -3rem;
+}
+.cheatright {
+  margin-right: -3rem;
+}
+.cheatup {
+  margin-top: -3rem;
+}
+.cheatdown {
+  margin-bottom: -3rem;
+}
+.nudgeleft {
+  margin-left: -6rem;
+}
+.nudgeright {
+  margin-right: -6rem;
+}
+.nudgeup {
+  margin-top: -6rem;
+}
+.nudgedown {
+  margin-bottom: -6rem;
+}
+.rotate1 {
+  transform: rotate(5deg);
+}
+.rotate2 {
+  transform: rotate(12deg);
+}
+.rotate3 {
+  transform: rotate(33deg);
+}
+.rotate4 {
+  transform: rotate(45deg);
+}
+.rotate5 {
+  transform: rotate(66deg);
+}
+.rotate6 {
+  transform: rotate(355deg);
+}
+.rotate6 {
+  transform: rotate(348deg);
+}
+.rotate6 {
+  transform: rotate(327deg);
+}
+.rotate90 {
+  transform: rotate(90deg);
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+.rotate270 {
+  transform: rotate(270deg);
+}
+.tip {
+  transform: skewY(4deg);
+  font-style: italic;
 }
 .input {
   display: block;
@@ -320,19 +744,50 @@ b {
   box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.5);
   border-bottom: 2px solid #6c7f9c;
 }
-.link {
-  color: #69c;
-  text-decoration: none;
+select {
+  color: #949a9e;
+  font-size: 2rem;
   cursor: pointer;
+  min-width: 10rem;
+  text-align: center;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
 }
-.link:hover {
-  border-bottom: 2px solid #69c;
+select:hover {
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.2);
 }
-.rounded {
-  border-radius: 0.5rem;
+select:focus {
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.5);
+  color: #69c;
+  border-bottom: 2px solid #6c7f9c;
 }
-.round {
+.circle {
   border-radius: 50%;
+}
+.flag {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid #7f9c6c;
+  border-bottom: 60px solid transparent;
+}
+.triangle,
+.triangleblue,
+.triangleorange {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #7f9c6c;
+}
+.triangleblue {
+  border-bottom: 30px solid #69c;
+}
+.triangleorange {
+  border-bottom: 30px solid #cc8a66;
+}
+.rounded,
+.code {
+  border-radius: 5px;
 }
 .outline {
   border: 1px solid #e9edec;
@@ -350,7 +805,38 @@ b {
 .body {
   color: #4d4d4d;
 }
-.middle {
-  text-align: center;
-  max-width: 60rem;
+h2 {
+  color: #808080;
+}
+hr {
+  color: #d3d3d3;
+  width: 70%;
+}
+.date {
+  text-align: left;
+  color: #d3d3d3;
+}
+.pre {
+  white-space: pre;
+}
+.break {
+  border-bottom: 1px solid #808080;
+  width: 2rem;
+  margin-left: 6rem;
+}
+.midline {
+  border-bottom: 2px solid #6accb2;
+  width: 50%;
+}
+.rightline {
+  margin-right: 15%;
+  border-bottom: 2px solid #cc8a66;
+  width: 33%;
+  align-self: flex-end;
+}
+.leftline {
+  margin-left: 15%;
+  border-bottom: 2px solid #6accb2;
+  width: 33%;
+  align-self: flex-start;
 }

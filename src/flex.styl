@@ -4,46 +4,111 @@
   align-items: center;
   text-align: center
   flex-direction: row;
-.flex-col
+.row
+  @extend .flex
+.flexcol
   @extend .flex
   flex-direction: column;
-.flex-right
-    width:100%;
-    display:  flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center
-    flex-direction: row;
-.flex-10
-  flex:10%
-.flex-15
-  flex:15%
-.flex-20
-  flex:20%
-.flex-25
-  flex:25%
-.flex-30
-  flex:30%
-.flex-50
-  flex:50%
-.flex-75
-  flex:75%
-.flex-80
-  flex:80%
+.col
+  @extend .flexcol
+.flextop
+  @extend .flexcol
+  justify-content: flex-start;
+.flexbottom
+  @extend .flexcol
+  justify-content: flex-end;
+.flexleft
+  @extend .flex
+  justify-content: flex-start;
+.flexright
+  @extend .flex
+  justify-content: flex-end;
+.flexcenter
+  @extend .flex
+  justify-content: center;
+.flexmiddle
+  @extend .flexcenter
+.middle
+  @extend .flexcenter
+.spacebetween
+  justify-content: space-between;
+// child - self
+.grow
+  flex:1
+  align-self: stretch;
+.megrow
+  @extend .grow
+.meleft
+  align-self: flex-start;
+.meright
+  align-self: flex-end;
 
-.medium
-  width:100%;
-  min-width:12rem;
-  height:80%;
-  min-height:5rem;
-  padding: 0.8rem;
-  margin: 0.8rem;
-  border-radius:.5rem
-.small
-  @extend .medium
+
+.pushup
+  align-self: flex-start;
+.pushdown
+  align-self: flex-end;
+
+.exist
+  min-height:1rem;
+  min-width:1rem;
+.flex10
+  @extend .exist
+  max-width:10%
+  width:10%;
+.flex15
+  @extend .exist
+  max-width:15%
+  width:15%;
+.flex20
+  @extend .exist
+  max-width:20%
+  width:20%;
+.flex25
+  @extend .exist
+  max-width:25%
+  width:25%;
+.flex30
+  @extend .exist
+  max-width:30%
+  width:30%;
+.flex50
+  @extend .exist
+  max-width:50%
   width:50%;
-  min-width:6rem;
-  min-height:3rem;
-
-.dummy
-  @extend .medium
+.flex75
+  @extend .exist
+  max-width:75%
+  width:75%;
+.flex80
+  @extend .exist
+  max-width:80%
+  width:80%;
+.flex90
+  @extend .exist
+  max-width:90%
+  width:90%;
+.flex100
+  @extend .exist
+  max-width:100%
+  width:100%;
+.me10
+  @extend .flex10
+.me15
+  @extend .flex15
+.me20
+  @extend .flex20
+.me25
+  @extend .flex25
+.me30
+  @extend .flex30
+.me50
+  @extend .flex50
+.me75
+  @extend .flex75
+.me80
+  @extend .flex80
+.me90
+  @extend .flex90
+.me100
+  @extend .flex100
