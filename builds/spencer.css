@@ -785,6 +785,69 @@ select:focus {
 .triangleorange {
   border-bottom: 30px solid #cc8a66;
 }
+.egg {
+  display: block;
+  width: 126px;
+  height: 180px;
+  background-color: #69c;
+  -webkit-border-radius: 63px 63px 63px 63px/108px 108px 72px 72px;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+}
+.moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #335799;
+}
+.cone {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid #6accb2;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.cross {
+  background: #69c;
+  height: 100px;
+  position: relative;
+  width: 20px;
+}
+.cross:after {
+  background: #69c;
+  content: "";
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
+}
+.confetti {
+  background: #69c;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+.confetti:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  background: #69c;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+}
 .rounded,
 .code {
   border-radius: 5px;
