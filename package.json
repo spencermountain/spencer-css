@@ -7,7 +7,7 @@
     "build": "./node_modules/.bin/stylus ./src/index.styl -o ./builds/spencer.css",
     "watch": "./node_modules/.bin/stylus -w ./src/index.styl -o ./builds/spencer.css",
     "min": "./node_modules/.bin/uglifycss ./builds/spencer.css >./builds/spencer.min.css",
-    "start": "browser-sync start --server --files './demo' --index './demo/index.html'",
+    "start": "browser-sync start --server --files './' --index './index.html'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/spencermountain/spencer-css#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.26.3",
     "stylus": "^0.54.5",
     "uglifycss": "0.0.29"
   }

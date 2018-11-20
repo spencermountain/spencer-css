@@ -1,0 +1,38 @@
+
+numbers = ( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 22 25 28 30 32 64 128)
+
+for num in (0..17)
+  .m{num}
+    margin: numbers[num]rem
+  .mt{num}
+    margin-top: numbers[num]rem
+  .ml{num}
+    margin-left: numbers[num]rem
+  .mb{num}
+    margin-left: numbers[num]rem
+  .p{num}
+    padding: numbers[num]rem
+  .w{num}
+    width: numbers[num]rem
+  .h{num}
+    min-height: numbers[num]rem
+  .f{num}
+    font-size: numbers[num]rem
+
+sizes = {
+  small   : 5rem,
+  medium   : 8rem,
+  large  : 16rem,
+  big  : 20rem,
+  huge  : 32rem,
+}
+
+// text colors
+for key, val in sizes
+  .{key}
+    width:val
+    // min-width:3rem
+    min-height:5rem
+    padding:0.5rem
+    margin:0.75rem
+    border-radius:5px
