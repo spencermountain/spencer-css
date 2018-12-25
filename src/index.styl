@@ -9,6 +9,7 @@ body
   margin: 1rem;
   padding: 0;
   background-color:greys.offwhite
+  color:#4d4d4d
   font-family: 'avenir next', avenir, sans-serif;
   display:flex;
   flex-direction: column;
@@ -21,12 +22,27 @@ hr
   color:lightgrey;
   width:70%;
 
+a
+  color: #6699cc
+  cursor:pointer
+  text-decoration: underline
+  &:hover
+    text-decoration-color:#cc7066
+
+.center
+  text-align:center;
+.left
+  text-align:left;
+.right
+  text-align:right;
+
 .stage
   max-width:45rem
   width:80%
   min-width:18rem
   min-height:12rem;
   display:flex;
+  padding:1rem
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -34,5 +50,6 @@ hr
   flex-wrap: wrap;
   @media screen and (max-width: 30rem)
     margin-left: 5px
+    padding:0.5rem
     margin-right: 5px
     width:100%
