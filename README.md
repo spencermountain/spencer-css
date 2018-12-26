@@ -7,10 +7,11 @@
   <a href="https://unpkg.com/spencer-css">
     <img src="https://badge-size.herokuapp.com/spencermountain/spencer-css/gh-pages/builds/spencer.min.css" />
   </a>
-  built from <a href="https://spencermounta.in/spencer-color/">spencer-color</a>
 </div>
 
 `npm i spencer-css`
+
+built from [spencer-color](https://spencermounta.in/spencer-color/)
 
 ![image](https://user-images.githubusercontent.com/399657/50425342-2bf74580-0842-11e9-8b37-ad4d1a7326f1.png)
 
