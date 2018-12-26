@@ -1,62 +1,67 @@
 .input
-  @extend .avenir
+  font-family: 'avenir next', avenir, sans-serif;
   display: block;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   margin: .3em .6em;
-  color: $midgrey
   width: 80%;
+  color:#a3a5a5
   max-width:50rem;
   font-size: 2rem;
-  // letter-spacing: .05em
   line-height: 1rem;
-  // font-size: 3rem;
   line-height: 1.25
-  // letter-spacing: .05em
   outline: none
   border: none;
   border-radius: 0.4rem;
-  // font-style: italic
-  box-shadow: 0px 0px 2px 0px rgba( 0, 0, 0, 0.5 );
-  transition: box-shadow 300ms
-  &:hover
-    box-shadow: 1px 1px 4px 0px rgba( 0, 0, 0, 0.2 )
-  &:focus
-    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 )
-    color:$darkblue
-    border-bottom:2px solid $darkblue
-  // &:hover
-  //   box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.3 );
-
-.button
-  @extend .avenir
-  background-color:$blue
-  color:$lightgrey
-  min-width:10rem;
-  min-height:2rem;
-  font-size:1.8rem;
-  margin:1rem;
-  padding:0.5rem;
-  cursor:pointer;
-  // outline: none
-  border: none;
-  border-radius:3px;
+  font-style: normal
   box-shadow: 0px 0px 2px 0px rgba( 0, 0, 0, 0.5 );
   transition: box-shadow 100ms
   &:hover
-    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 )
+    box-shadow: 1px 1px 4px 0px rgba( 0, 0, 0, 0.2 )
+    color:#6699cc
+  &:focus
+    font-style: italic
+    box-shadow: 2px 2px 6px 0px rgba( 0, 0, 0, 0.5 )
+    color:#6699cc
     border-bottom:2px solid $darkblue
 
+.button
+  font-family: 'avenir next', avenir, sans-serif;
+  background-color:#fdfffd
+  // color:$lightgrey
+  color:#6699cc
+  min-width:8rem;
+  min-height:1.2rem;
+  font-size:1.4rem;
+  margin:0.5rem;
+  padding:0.2rem;
+  cursor:pointer;
+  border: none;
+  border-radius:3px;
+  box-shadow: 1px 1px 2px 0px rgba( 0, 0, 0, 0.5 );
+  transition: box-shadow 100ms
+  border-bottom:2px solid #6699cc;
+  &:hover
+    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 )
+    border-bottom:2px solid #6699cc;
+    color:#cc8a66
+  &:focus
+    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 )
+    border-bottom:2px solid #6699cc;
+    color:#cc8a66
+
 select
-  @extend .avenir
-  color:$midgrey
-  font-size:2rem;
+  font-family: 'avenir next', avenir, sans-serif;
+  color:#a3a5a5
+  font-size:1rem;
   cursor:pointer;
   min-width:10rem;
   text-align:center;
-  box-shadow: 0px 0px 2px 0px rgba( 0, 0, 0, 0.5 );
+  box-shadow: 0px 0px 0px 0px rgba( 0, 0, 0, 0.5 );
+  transition: box-shadow 100ms
   &:hover
     box-shadow: 1px 1px 4px 0px rgba( 0, 0, 0, 0.2 )
+    color:#6699cc
   &:focus
-    box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 )
-    color:$blue
-    border-bottom:2px solid $darkblue
+    font-style: italic
+    color:#6699cc
+    box-shadow: 1px 1px 1px 0px rgba( 0, 0, 0, 0.5 )

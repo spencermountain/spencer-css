@@ -1,149 +1,83 @@
-$blue       = #6699cc
-$navy       = #335799
-$green      = #6accb2
-$yellow     = #e1e6b3
-$red        = #cc7066
-$pink       = #e6b8b3
+colors = {
+  blue: #6699cc,
+  green: #6accb2,
+  yellow: #e1e6b3,
+  red: #cc7066,
+  pink: #F2C0BB, //#e6b8b3,
 
-$olive      = #7f9c6c
-$brown      = #9c896c
-$darkblue   = #6c7f9c
-$orange     = #cc8a66
-$purple     = #d8b3e6
-$lightblue  = #66a8cc
-$lightgreen = #66ccac
-$darkgreen = #339957
-$darkbrown  = #605439
-$burnt      = #603a39
-$rose       = #e6b4b3
-$dimblue    = #949a9e
-$beige      = #e6d7b3
+  brown: #705E5C,
+  orange: #cc8a66,
+  purple: #d8b3e6,
+  navy: #335799,
+  olive: #7f9c6c,
 
-$offwhite   = #fbfbfb//#f7f8f8
+  fuscia: #735873, //#603960,
+  beige: #e6d7b3,
+  slate: #8C8C88,
+  suede: #9c896c,
+  burnt: #603a39,
 
-$lightgrey  = #e9edec
-$dimgrey    = #d7d5d2
-$grey       = #4d4d4d
-$midgrey    = #949a9e
-$slategrey  = #51433e
-$bluegrey   = #606c74
-$darkgrey   = #443d3d
-$offblack   = #333333//#f7f8f8
+  sea: #50617A,
+  sky: #2D85A8,
+  night: #303b50,
+  // dark: #2C3133,
+  rouge: #914045,
+  grey: #838B91,
 
-.blue
-  color: $blue
-.navy
-  color: $navy
-.green
-  color: $green
-.yellow
-  color: $yellow
-.red
-  color: $red
-.pink
-  color: $pink
-.olive
-  color: $olive
-.rose
-  color: $rose
-.brown
-  color: $brown
-.lightgreen
-  color: $lightgreen
-.darkgreen
-  color: $darkgreen
-.darkbrown
-  color: $darkbrown
-.burnt
-  color: $burnt
-.beige
-  color: $beige
-.darkblue
-  color: $darkblue
-.dimblue
-  color: $dimblue
-.lightblue
-  color: $lightblue
-.orange
-  color: $orange
-.purple
-  color: $purple
+  mud: #C4ABAB,
+  royal: #275291,
+  cherry: #cc6966,
+  tulip: #e6b3bc,
+  rose: #D68881,
+  fire: #AB5850,
 
+  greyblue: #72697D,
+  greygreen: #8BA3A2,
+  greypurple: #978BA3,
+  burn: #6D5685,
 
-.grey
-  color: $grey
-.offwhite
-  color: $offwhite
-.lightgrey
-  color: $lightgrey
-.darkgrey
-  color: $darkgrey
-.offblack
-  color: $offblack
+  slategrey: #bfb0b3,
+  light: #a3a5a5,
+  lighter: #d7d5d2,
+  fudge: #4d4d4d,
+  lightgrey: #949a9e,
 
-.blueback
-  background-color: $blue
-.navyback
-  background-color: $navy
-.greenback
-  background-color: $green
-.yellowback
-  background-color: $yellow
-.redback
-  background-color: $red
-.greenback
-  background-color: $green
-.pinkback
-  background-color: $pink
-.oliveback
-  background-color: $olive
-.brownback
-  background-color: $brown
-.darkblueback
-  background-color: $darkblue
-.orangeback
-  background-color: $orange
-.purpleback
-  background-color: $purple
-.lightblueback
-  background-color: $lightblue
-.lightgreenback
-  background-color: $lightgreen
-.darkbrownback
-  background-color: $darkbrown
-.burntback
-  background-color: $burnt
-.roseback
-  background-color: $rose
-.dimblueback
-  background-color: $dimblue
-.beigeback
-  background-color: $beige
+  white: #fbfbfb,
+  dimgrey: #606c74,
+  softblack: #463D4F,
+  dark: #443d3d,
+  black: #333333
+}
+
+greys = {
+  offwhite : #fbfbfb,
+  light: #a3a5a5,
+  dim  : #d7d5d2,
+  grey     : #4d4d4d,
+  mid  : #949a9e,
+  slate: #51433e,
+  blue : #606c74,
+  dark : #443d3d,
+  offblack : #333333
+}
+
+for key, val in colors
+  //text colors
+  .{key}
+    color:val
+  //backgrounds
+  .bg{key}
+    background-color:val
+  //underlines
+  .bottom-{key}
+    border-bottom:2px solid val
+    padding-left:1rem
+    padding-right:1rem
 
 
-.offwhiteback
-  background-color: $offwhite
-  color:$bluegrey;
-.lightgreyback
-  background-color: $lightgrey
-  color:$bluegrey;
-.dimgreyback
-  background-color: $dimgrey
-  color:$bluegrey;
-.midgreyback
-  background-color: $midgrey
-.bluegreyback
-  background-color: $bluegrey
-  color: $dimgrey;
-.greyback
-  background-color: $grey
-  color:$dimgrey
-.slategreyback
-  background-color: $slategrey
-  color:$dimgrey
-.darkgreyback
-  background-color: $darkgrey
-  color:$dimgrey
-.offblackback
-  background-color: $offblack
-  color:$midgrey
+
+// $darkblue   = #6c7f9c
+// $lightblue  = #66a8cc
+// $lightgreen = #66ccac
+// $darkgreen = #339957
+// $darkbrown  = #605439

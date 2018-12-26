@@ -1,0 +1,47 @@
+
+nums = (0 1 2 3 4 5 6 7 8 9 10 12)
+for num in (0..11)
+  .m{nums[num]}
+    margin: nums[num]rem
+  .mt{nums[num]}
+    margin-top: nums[num]rem
+  .ml{nums[num]}
+    margin-left: nums[num]rem
+  .mr{nums[num]}
+    margin-right: nums[num]rem
+  .mb{nums[num]}
+    margin-bottom: nums[num]rem
+  .p{nums[num]}
+    padding: nums[num]rem
+  .pt{nums[num]}
+    padding-top: nums[num]rem
+  .pl{nums[num]}
+    padding-left: nums[num]rem
+  .pr{nums[num]}
+    padding-right: nums[num]rem
+
+
+bignums = (0 1 2 3 4 5 7 10 12 14 15 17 20 22 25 30 32 64 128)
+for num in (0..18)
+  .w{bignums[num]}
+    width: bignums[num]rem
+  .h{bignums[num]}
+    min-height: bignums[num]rem
+  .f{bignums[num]}
+    font-size: bignums[num]px
+
+sizes = {
+  small   : 5rem,
+  medium   : 8rem,
+  large  : 16rem,
+  big  : 20rem,
+  huge  : 32rem,
+}
+
+// text colors
+for key, val in sizes
+  .{key}
+    min-width:val
+    padding:0.3rem
+    margin:0.75rem
+    border-radius:5px

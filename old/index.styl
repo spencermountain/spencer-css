@@ -1,0 +1,69 @@
+@import "colors.styl"
+@import "hovers.styl"
+@import "text.styl"
+@import "spacing.styl"
+@import "flex.styl"
+@import "layout.styl"
+@import "input.styl"
+@import "shapes.styl"
+
+
+.rounded
+  border-radius:5px
+
+.outline
+  border: 1px solid $lightgrey
+  border-radius:.5rem
+.underline
+  border-bottom: 2px solid $green
+
+.shadow
+   box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+.img
+  max-width:100%
+
+.body
+  color:$grey
+  @extend .offwhiteback
+  @extend .flex
+  @extend .avenir
+
+h2
+  color:grey;
+
+hr
+  color:lightgrey;
+  width:70%;
+
+.date
+  text-align:left;
+  color:lightgrey;
+.code
+  @extend .lightgreyback
+  @extend .rounded
+  @extend .olive
+  @extend .p1
+  @extend .m1
+
+
+.pre
+  white-space: pre;
+
+.break
+  border-bottom:1px solid grey;
+  width:2rem;
+  margin-left:6rem;
+
+.midline
+  border-bottom:2px solid $green;
+  width:50%;
+.rightline
+  margin-right:15%;
+  border-bottom:2px solid $orange;
+  width:33%;
+  align-self: flex-end;
+.leftline
+  margin-left:15%;
+  border-bottom:2px solid $green;
+  width:33%;
+  align-self: flex-start;
