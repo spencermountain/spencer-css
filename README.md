@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/npm/v/spencer-css.svg?style=flat-square" />
   </a>
   <a href="https://unpkg.com/spencer-css">
-    <img src="https://badge-size.herokuapp.com/spencermountain/spencer-css/gh-pages/builds/spencer-css.js" />
+    <img src="https://badge-size.herokuapp.com/spencermountain/spencer-css/gh-pages/builds/spencer.min.css" />
   </a>
   built from <a href="https://spencermounta.in/spencer-color/">spencer-color</a>
 </div>
