@@ -1,3 +1,9 @@
+.flex
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+.wrap
+  flex-wrap: wrap;
 .row
   display:flex;
   flex-direction: row !important;
@@ -5,7 +11,26 @@
   align-items: center;
   text-align:center;
   flex-wrap: wrap;
-  width:100%;
+  align-self: stretch;
+  // width:100%;
+.row-left
+  @extends .row
+  justify-content: flex-start;
+.row-right
+  @extends .row
+  justify-content: flex-end;
+.row-middle
+  @extends .row
+  justify-content: center;
+.row-stretch
+  @extends .row
+  justify-content: space-between;
+
+.centered
+  display:flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  align-items: center;
 
 .col
   display:flex;
@@ -15,8 +40,39 @@
   text-align:left;
   flex-wrap: wrap;
   width:100%;
+.col-top
+  @extends .col
+  justify-content: flex-start;
+.col-bottom
+  @extends .col
+  justify-content: flex-end;
+.col-middle
+  @extends .col
+  justify-content: center;
+.col-stretch
+  @extends .col
+  justify-content: space-around;
 
-.goright
-  align-self: end;
+
+
 .goleft
-  align-self: start;
+  align-self: flex-start;
+.goright
+  align-self: flex-end;
+.goup
+  align-self: flex-start;
+.godown
+  align-self: flex-end;
+
+.grow
+  flex-grow:100;
+.grow50
+  flex-grow:50;
+.grow25
+  flex-grow:25;
+.grow75
+  flex-grow:75;
+.grow10
+  flex-grow:10;
+.shrink
+  flex-shrink:1;

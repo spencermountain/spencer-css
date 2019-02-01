@@ -4,9 +4,11 @@
 @import "input.styl"
 @import "misc.styl"
 @import "position.styl"
+@import "text.styl"
 
 html
   min-height: 100%;
+  font-size: 16px;
 body
   margin: 0px;
   padding: 0px;
@@ -39,8 +41,6 @@ a
 .right
   text-align:right;
 
-
-
 .footer
   margin: auto 1rem 1rem auto;
   padding:0.5rem;
@@ -49,19 +49,16 @@ a
   align-items: flex-end;
 
 .stage
-  max-width:45rem
-  width:80%
-  min-width:18rem
-  min-height:12rem;
   display:flex;
-  padding:1rem
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: space-around;
   align-items: center;
   text-align:left;
   flex-wrap: wrap;
-  @media screen and (max-width: 30rem)
-    margin-left: 5px
-    padding:0.5rem
-    margin-right: 5px
-    width:100%
+  margin:1.5rem;
+  padding:1.5rem;
+  // max-width:38.44125rem; //w10
+  max-width:57.661875;  //w11
+  min-width:17.085rem
+  @media screen and (max-width: 25.6275rem)
+    margin:0px;

@@ -1,100 +1,137 @@
-
-nums = (0 1 2 3 4 6 8 10 12)
-for num in (0..11)
-  .m{nums[num]}
-    margin: nums[num]rem
-  .mt{nums[num]}
-    margin-top: nums[num]rem
-  .ml{nums[num]}
-    margin-left: nums[num]rem
-  .mr{nums[num]}
-    margin-right: nums[num]rem
-  .mb{nums[num]}
-    margin-bottom: nums[num]rem
-  .p{nums[num]}
-    padding: nums[num]rem
-  .pt{nums[num]}
-    padding-top: nums[num]rem
-  .pl{nums[num]}
-    padding-left: nums[num]rem
-  .pr{nums[num]}
-    padding-right: nums[num]rem
-  .f{nums[num]}
-    font-size: nums[num]rem
-
-
-bignums = (0 1 2 3 4 5 8 10 12 14 15 16 18 20 22 25 30 32 40 64 100 128)
-for num in (0..18)
-  .w{bignums[num]}
-    width: bignums[num]rem
-  .mw{bignums[num]}
-    max-width: bignums[num]rem
-  .minw{bignums[num]}
-    min-width: bignums[num]rem
-  .h{bignums[num]}
-    height: bignums[num]rem
-  .mh{bignums[num]}
-    max-height: bignums[num]rem
-  .minh{bignums[num]}
-    min-height: bignums[num]rem
-
-.w25p
-  width:25%
-.w50p
-  width:50%
-.w75p
-  width:75%
-.w100p
-  width:100%
-
-// smaller fonts
-.f04
-  font-size: 0.4rem
-.f05
-  font-size: 0.5rem
-.f06
-  font-size: 0.6rem
-.f07
-  font-size: 0.7rem
-.f08
-  font-size: 0.8rem
-.f09
-  font-size: 0.9rem
-
-// smaller margin/padding
-.m05
-  margin:0.5rem
-.mt05
-  margin-top:0.5rem
-.ml05
-  margin-left:0.5rem
-.mr05
-  margin-right:0.5rem
-.mb05
-  margin-bottom:0.5rem
-.p05
-  padding:0.5rem
-.pl05
-  padding-left:0.5rem
-.pr05
-  padding-right:0.5rem
-.pt05
-  padding-top:0.5rem
-.pb05
-  padding-bottom:0.5rem
-
-sizes = {
-  small   : 5rem,
-  medium   : 8rem,
-  large  : 16rem,
-  big  : 20rem,
-  huge  : 32rem,
+//perfect fifth scale, from https://type-scale.com/
+fifth={
+  '07' : 0.296
+  '08' : 0.444
+  '09' : 0.667
+  '1' : 1
+  '2' : 1.5
+  '3' : 2.25
+  '4' : 3.375
+  '5' : 5.063
+  '6' : 7.594
+  '7' : 11.39
+  '8' : 17.085
+  '9' : 25.6275
+  '10' : 38.44125
+  '11' : 57.661875
+  '12' : 86.4928125
+  // '13' : 129.73921875
+  // '14' : 194.608828125
+}
+//minor third scale, from https://type-scale.com/
+third={
+  '07' : 0.579
+  '08' : 0.694
+  '09' : 0.833
+  '1' : 1
+  '2' : 1.2
+  '3' : 1.44
+  '4' : 1.728
+  '5' : 2.07
+  '6' : 2.488
+  '7' : 2.986
+  '8' : 3.583
+  '9' : 4.3
+  '10' : 5.16
+  '11' : 6.192
+  '12' : 7.43
+  '13' : 8.916
+  '14' : 10.699
 }
 
-// text colors
-for key, val in sizes
-  .{key}
-    min-width:val
-    padding:0.3rem
-    margin:0.75rem
-    border-radius:5px
+// aspect-ratios
+rect = 0.5625 //16/9
+golden= 1.618033989;
+
+//widths, margins are fifth
+for name, size in fifth
+  .w{name}
+    width: size rem
+  .h{name}
+    height: size rem
+  .m{name}
+    margin: size rem
+  .ml{name}
+    margin-left: size rem
+  .mt{name}
+    margin-top: size rem
+  .mb{name}
+    margin-bottom: size rem
+  .p{name}
+    padding: size rem
+  .rect{name}
+    width: size rem;
+    // height: size/golden rem;
+    height: size*rect rem;
+    text-align:center;
+  .portrait{name}
+    width: size rem;
+    height: size*golden rem;
+    text-align:center;
+
+//fonts are minor third
+for name, size in fifth
+  .f{name}
+    font-size: size rem
+//
+// bignums = (0 1 2 3 4 5 8 10 12 14 15 16 18 20 22 25 30 32 40 64 100 128)
+// for num in (0..18)
+//   .w{bignums[num]}
+//     width: bignums[num]rem
+//   .mw{bignums[num]}
+//     max-width: bignums[num]rem
+//   .minw{bignums[num]}
+//     min-width: bignums[num]rem
+//   .h{bignums[num]}
+//     height: bignums[num]rem
+//   .mh{bignums[num]}
+//     max-height: bignums[num]rem
+//   .minh{bignums[num]}
+//     min-height: bignums[num]rem
+//
+// .w25p
+//   width:25%
+// .w50p
+//   width:50%
+// .w75p
+//   width:75%
+// .w100p
+//   width:100%
+//
+// // smaller margin/padding
+// .m05
+//   margin:0.5rem
+// .mt05
+//   margin-top:0.5rem
+// .ml05
+//   margin-left:0.5rem
+// .mr05
+//   margin-right:0.5rem
+// .mb05
+//   margin-bottom:0.5rem
+// .p05
+//   padding:0.5rem
+// .pl05
+//   padding-left:0.5rem
+// .pr05
+//   padding-right:0.5rem
+// .pt05
+//   padding-top:0.5rem
+// .pb05
+//   padding-bottom:0.5rem
+//
+// sizes = {
+//   small   : 5rem,
+//   medium   : 8rem,
+//   large  : 16rem,
+//   big  : 20rem,
+//   huge  : 32rem,
+// }
+//
+// // text colors
+// for key, val in sizes
+//   .{key}
+//     min-width:val
+//     padding:0.3rem
+//     margin:0.75rem
+//     border-radius:5px
