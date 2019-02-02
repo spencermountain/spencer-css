@@ -25,12 +25,12 @@ built from [spencer-color](https://spencermounta.in/spencer-color/)
     <link rel="stylesheet" href="https://unpkg.com/spencer-css">
   </head>
   <body class="body">
-    <div class="flex-col outline">
+    <div class="col outline">
       <div class="title">spencer-css</div>
       <div>so <a class="link hover" href="#">hello</a> <b>world</b></div>
-      <div class="m2 p2 blueback"></div>
-      <div class="full redback"></div>
-      <div class="medium yellowback"></div>
+      <div class="m2 p2 bgblue"></div>
+      <div class="full bgred"></div>
+      <div class="medium bgyellow"></div>
       <input class="input" type="text"/>
     </div>
   </body>

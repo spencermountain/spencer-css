@@ -47,6 +47,12 @@ golden= 1.618033989;
 for name, size in fifth
   .w{name}
     width: size rem
+  .minw{name}
+    min-width: size rem
+  .maxw{name}
+    max-width: size rem
+  .h{name}
+    height: size rem
   .h{name}
     height: size rem
   .m{name}
@@ -57,11 +63,16 @@ for name, size in fifth
     margin-top: size rem
   .mb{name}
     margin-bottom: size rem
+  .mv{name}
+    margin-top: size rem
+    margin-bottom: size rem
+  .mh{name}
+    margin-left: size rem
+    margin-right: size rem
   .p{name}
     padding: size rem
   .rect{name}
     width: size rem;
-    // height: size/golden rem;
     height: size*rect rem;
     text-align:center;
   .portrait{name}
@@ -89,49 +100,3 @@ for name, size in fifth
 //   .minh{bignums[num]}
 //     min-height: bignums[num]rem
 //
-// .w25p
-//   width:25%
-// .w50p
-//   width:50%
-// .w75p
-//   width:75%
-// .w100p
-//   width:100%
-//
-// // smaller margin/padding
-// .m05
-//   margin:0.5rem
-// .mt05
-//   margin-top:0.5rem
-// .ml05
-//   margin-left:0.5rem
-// .mr05
-//   margin-right:0.5rem
-// .mb05
-//   margin-bottom:0.5rem
-// .p05
-//   padding:0.5rem
-// .pl05
-//   padding-left:0.5rem
-// .pr05
-//   padding-right:0.5rem
-// .pt05
-//   padding-top:0.5rem
-// .pb05
-//   padding-bottom:0.5rem
-//
-// sizes = {
-//   small   : 5rem,
-//   medium   : 8rem,
-//   large  : 16rem,
-//   big  : 20rem,
-//   huge  : 32rem,
-// }
-//
-// // text colors
-// for key, val in sizes
-//   .{key}
-//     min-width:val
-//     padding:0.3rem
-//     margin:0.75rem
-//     border-radius:5px
