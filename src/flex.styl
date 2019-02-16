@@ -25,6 +25,12 @@
 .row-stretch
   @extends .row
   justify-content: space-between;
+.row-top
+  @extends .row
+  align-items: flex-start;
+.row-bottom
+  @extends .row
+  align-items: flex-end;
 
 .centered
   display:flex;
@@ -52,7 +58,12 @@
 .col-stretch
   @extends .col
   justify-content: space-around;
-
+.col-left
+  @extends .col
+  align-items: flex-start;
+.col-right
+  @extends .col
+  align-items: flex-end;
 
 
 .goleft

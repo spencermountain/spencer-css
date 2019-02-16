@@ -3,10 +3,9 @@
   display: block;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin: .3em .6em;
-  width: 80%;
   color:#a3a5a5
   max-width:50rem;
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 1rem;
   line-height: 1.25
   outline: none
@@ -17,12 +16,15 @@
   transition: box-shadow 100ms
   &:hover
     box-shadow: 1px 1px 4px 0px rgba( 0, 0, 0, 0.2 )
-    color:#6699cc
+    color:#98b2d3
   &:focus
     font-style: italic
     box-shadow: 2px 2px 6px 0px rgba( 0, 0, 0, 0.5 )
     color:#6699cc
     border-bottom:2px solid $darkblue
+
+.textarea
+  @extend .input
 
 .button
   font-family: 'avenir next', avenir, sans-serif;

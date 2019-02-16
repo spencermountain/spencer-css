@@ -57,8 +57,26 @@ a
   flex-wrap: wrap;
   margin:1.5rem;
   padding:1.5rem;
+  flex:1;
+  width:80%
   // max-width:38.44125rem; //w10
-  max-width:57.661875;  //w11
+  max-width:57.661875rem;  //w11
   min-width:17.085rem
   @media screen and (max-width: 25.6275rem)
     margin:0px;
+
+.stage-title
+  left:16%;
+  transition: left .3s;
+  align-self:flex-start;
+  margin-bottom:-1rem;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  background-color:#fbfbfb;
+  top: 0;
+  @media screen and (max-width: 115rem)
+    left:10%
+  @media screen and (max-width: 90rem)
+    left:7.5%
+  @media screen and (max-width: 75rem)
+    left:0%
