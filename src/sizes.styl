@@ -1,5 +1,6 @@
 //perfect fifth scale, from https://type-scale.com/
 tiny={
+  '05' : 0.5
   '07' : 0.296
   '08' : 0.444
   '09' : 0.667
@@ -57,12 +58,13 @@ for name, size in medium
     margin-right: size rem
   .p{name}
     padding: size rem
-  // fonts
   .f{name}
     font-size: size rem
 
 for name, size in large
-  .f{name}
-    font-size: size rem
   .w{name}
     width: size rem
+  .maxw{name}
+    max-width: size rem
+  .f{name}
+    font-size: size rem
