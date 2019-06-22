@@ -11,6 +11,13 @@
   position: sticky;
   top: 0;
 
+.centered
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
 .top0
   top:0rem
 .top05
@@ -19,6 +26,10 @@
   top:1rem
 .top2
   top:2rem
+.top50p
+  @extends .centered
+.vcenter
+  @extends .centered
 .bottom0
   bottom:0rem
 .bottom05

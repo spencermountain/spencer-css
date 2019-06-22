@@ -760,6 +760,15 @@
   position: sticky;
   top: 0;
 }
+.centered,
+.top50p,
+.vcenter {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .top0 {
   top: 0rem;
 }
@@ -931,6 +940,38 @@
 }
 .gutter09 {
   grid-gap: 0.667rem;
+}
+.square {
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+}
+.golden {
+  position: relative;
+  height: 0;
+  padding-top: 61.8%;
+}
+.wide {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+}
+.wider {
+  position: relative;
+  height: 0;
+  padding-top: 54%;
+}
+.rect {
+  position: relative;
+  height: 0;
+  padding-top: 50%;
+}
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 html {
   min-height: 100%;
