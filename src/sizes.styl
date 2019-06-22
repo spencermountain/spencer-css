@@ -1,8 +1,10 @@
 //perfect fifth scale, from https://type-scale.com/
-fifth={
+tiny={
   '07' : 0.296
   '08' : 0.444
   '09' : 0.667
+}
+medium={
   '1' : 1
   '2' : 1.5
   '3' : 2.25
@@ -11,6 +13,8 @@ fifth={
   '6' : 7.594
   '7' : 11.39
   '8' : 17.085
+}
+large ={
   '9' : 25.6275
   '10' : 38.44125
   '11' : 57.661875
@@ -18,41 +22,23 @@ fifth={
   // '13' : 129.73921875
   // '14' : 194.608828125
 }
-//minor third scale, from https://type-scale.com/
-third={
-  '07' : 0.579
-  '08' : 0.694
-  '09' : 0.833
-  '1' : 1
-  '2' : 1.2
-  '3' : 1.44
-  '4' : 1.728
-  '5' : 2.07
-  '6' : 2.488
-  '7' : 2.986
-  '8' : 3.583
-  '9' : 4.3
-  '10' : 5.16
-  '11' : 6.192
-  '12' : 7.43
-  '13' : 8.916
-  '14' : 10.699
-}
 
-// aspect-ratios
-rect = 0.5625 //16/9
-golden= 1.618033989;
+for name, size in tiny
+  .w{name}
+    width: size rem
+  .h{name}
+    height: size rem    
+  .f{name}
+    font-size: size rem
 
 //widths, margins are fifth
-for name, size in fifth
+for name, size in medium
   .w{name}
     width: size rem
   .minw{name}
     min-width: size rem
   .maxw{name}
     max-width: size rem
-  .h{name}
-    height: size rem
   .h{name}
     height: size rem
   .m{name}
@@ -71,32 +57,12 @@ for name, size in fifth
     margin-right: size rem
   .p{name}
     padding: size rem
-  .rect{name}
-    width: size rem;
-    height: size*rect rem;
-    text-align:center;
-  .portrait{name}
-    width: size rem;
-    height: size*golden rem;
-    text-align:center;
-
-//fonts are minor third
-for name, size in fifth
+  // fonts
   .f{name}
     font-size: size rem
-//
-// bignums = (0 1 2 3 4 5 8 10 12 14 15 16 18 20 22 25 30 32 40 64 100 128)
-// for num in (0..18)
-//   .w{bignums[num]}
-//     width: bignums[num]rem
-//   .mw{bignums[num]}
-//     max-width: bignums[num]rem
-//   .minw{bignums[num]}
-//     min-width: bignums[num]rem
-//   .h{bignums[num]}
-//     height: bignums[num]rem
-//   .mh{bignums[num]}
-//     max-height: bignums[num]rem
-//   .minh{bignums[num]}
-//     min-height: bignums[num]rem
-//
+
+for name, size in large
+  .f{name}
+    font-size: size rem
+  .w{name}
+    width: size rem

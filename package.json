@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/spencermountain/spencer-css#readme",
   "devDependencies": {
-    "browser-sync": "2.26.3",
+    "browser-sync": "2.26.7",
     "stylus": "0.54.5",
     "uglifycss": "0.0.29"
   }
