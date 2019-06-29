@@ -151,25 +151,25 @@
 .ulblue {
   border-bottom: 2px solid #69c;
 }
-.ulblue {
+.ulgreen {
   border-bottom: 2px solid #6accb2;
 }
-.ulblue {
+.ulyellow {
   border-bottom: 2px solid #e1e6b3;
 }
-.ulblue {
+.ulred {
   border-bottom: 2px solid #cc7066;
 }
-.ulblue {
+.ulpink {
   border-bottom: 2px solid #f2c0bb;
 }
-.ulblue {
+.ulbrown {
   border-bottom: 2px solid #705e5c;
 }
-.ulblue {
+.ulorange {
   border-bottom: 2px solid #cc8a66;
 }
-.ulblue {
+.ulpurple {
   border-bottom: 2px solid #d8b3e6;
 }
 .w05 {
@@ -554,10 +554,10 @@
   justify-content: space-around;
 }
 .wrap {
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
 }
 .nowrap {
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
 }
 .row,
 .row-left,
@@ -743,6 +743,24 @@
 .b7 {
   border-width: 14px;
 }
+.z-2 {
+  z-index: -2;
+}
+.z-1 {
+  z-index: -1;
+}
+.z0 {
+  z-index: 0;
+}
+.z1 {
+  z-index: 1;
+}
+.z2 {
+  z-index: 2;
+}
+.z3 {
+  z-index: 3;
+}
 .relative {
   position: relative;
 }
@@ -852,6 +870,9 @@
 }
 .cursor {
   cursor: pointer;
+}
+.clean {
+  text-decoration: none;
 }
 .fit {
   font-size: 25.5vw;

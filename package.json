@@ -1,6 +1,6 @@
 {
   "name": "spencer-css",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "several opinionated tachyons-style css classes",
   "main": "builds/spencer.min.css",
   "scripts": {
