@@ -249,6 +249,12 @@
 .p1 {
   padding: 1rem;
 }
+.pl1 {
+  padding-left: 1rem;
+}
+.pr1 {
+  padding-right: 1rem;
+}
 .f1 {
   font-size: 1rem;
 }
@@ -292,6 +298,12 @@
 }
 .p2 {
   padding: 1.5rem;
+}
+.pl2 {
+  padding-left: 1.5rem;
+}
+.pr2 {
+  padding-right: 1.5rem;
 }
 .f2 {
   font-size: 1.5rem;
@@ -337,6 +349,12 @@
 .p3 {
   padding: 2.25rem;
 }
+.pl3 {
+  padding-left: 2.25rem;
+}
+.pr3 {
+  padding-right: 2.25rem;
+}
 .f3 {
   font-size: 2.25rem;
 }
@@ -380,6 +398,12 @@
 }
 .p4 {
   padding: 3.375rem;
+}
+.pl4 {
+  padding-left: 3.375rem;
+}
+.pr4 {
+  padding-right: 3.375rem;
 }
 .f4 {
   font-size: 3.375rem;
@@ -425,6 +449,12 @@
 .p5 {
   padding: 5.063rem;
 }
+.pl5 {
+  padding-left: 5.063rem;
+}
+.pr5 {
+  padding-right: 5.063rem;
+}
 .f5 {
   font-size: 5.063rem;
 }
@@ -468,6 +498,12 @@
 }
 .p6 {
   padding: 7.594rem;
+}
+.pl6 {
+  padding-left: 7.594rem;
+}
+.pr6 {
+  padding-right: 7.594rem;
 }
 .f6 {
   font-size: 7.594rem;
@@ -513,6 +549,12 @@
 .p7 {
   padding: 11.39rem;
 }
+.pl7 {
+  padding-left: 11.39rem;
+}
+.pr7 {
+  padding-right: 11.39rem;
+}
 .f7 {
   font-size: 11.39rem;
 }
@@ -556,6 +598,12 @@
 }
 .p8 {
   padding: 17.085rem;
+}
+.pl8 {
+  padding-left: 17.085rem;
+}
+.pr8 {
+  padding-right: 17.085rem;
 }
 .f8 {
   font-size: 17.085rem;
@@ -920,6 +968,9 @@
   cursor: pointer;
 }
 .clean {
+  text-decoration: none;
+}
+.bare {
   text-decoration: none;
 }
 .fit {
