@@ -1,78 +1,36 @@
-//perfect fifth scale, from https://type-scale.com/
-tiny={
-  '05' : 0.5
-  '07' : 0.296
-  '08' : 0.444
-  '09' : 0.667
-}
-medium={
-  '1' : 1
-  '2' : 1.5
-  '3' : 2.25
-  '4' : 3.375
-  '5' : 5.063
-  '6' : 7.594
-  '7' : 11.39
-  '8' : 17.085
-}
-large ={
-  '9' : 25.6275
-  '10' : 38.44125
-  '11' : 57.661875
-  '12' : 86.4928125
-  // '13' : 129.73921875
-  // '14' : 194.608828125
-}
-
-for name, size in tiny
-  .w{name}
-    width: size rem
-  .h{name}
-    height: size rem    
-  .f{name}
-    font-size: size rem
-
-//widths, margins are fifth
-for name, size in medium
-  .w{name}
-    width: size rem
-  .minw{name}
-    min-width: size rem
-  .maxw{name}
-    max-width: size rem
-  .h{name}
-    height: size rem
-  .minh{name}
-    min-height: size rem
-  .m{name}
-    margin: size rem
-  .ml{name}
-    margin-left: size rem
-  .mr{name}
-    margin-right: size rem
-  .mt{name}
-    margin-top: size rem
-  .mb{name}
-    margin-bottom: size rem
-  .mv{name}
-    margin-top: size rem
-    margin-bottom: size rem
-  .mh{name}
-    margin-left: size rem
-    margin-right: size rem
-  .p{name}
-    padding: size rem
-  .pl{name}
-    padding-left: size rem
-  .pr{name}
-    padding-right: size rem
-  .f{name}
-    font-size: size rem
-
-for name, size in large
-  .w{name}
-    width: size rem
-  .maxw{name}
-    max-width: size rem
-  .f{name}
-    font-size: size rem
+.mv0
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+.mv02
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+.mv04
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+.mv1
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+.mv2
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+.mv4
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+.mv6
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+.mv8
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+.mv10
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+.mv12
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+.mv14
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+.mv16
+  margin-top: 16rem;
+  margin-bottom: 16rem;
