@@ -1,79 +1,108 @@
 @import "colors.styl"
-@import "sizes.styl"
-@import "flex.styl"
-@import "misc.styl"
-@import "position.styl"
+@import "background.styl"
+@import "borders.styl"
 @import "text.styl"
-@import "grid.styl"
-@import "ratios.styl"
+@import "sizes.styl"
+@import "layout.styl"
+@import "underlines.styl"
+
+// greys = {
+//   offwhite : #fbfbfb,
+//   light: #a3a5a5,
+//   dim  : #d7d5d2,
+//   grey : #4d4d4d,
+//   mid  : #949a9e,
+//   slate: #51433e,
+//   blue : #606c74,
+//   dark : #443d3d,
+//   offblack : #333333
+// }
+
 
 html
-  min-height: 100%;
-  font-size: 16px;
-.body
-  margin: 0px;
+  position: relative;
+  height: 100%;
+  width: 100%;
   padding: 0px;
-  background-color:greys.offwhite
-  color:#4d4d4d
+  margin: 0px auto;
+  margin-top: 1.2rem;
   min-height: 100vh;
+  overflow-x: hidden;
+  color:#4d4d4d
+  background-color:#fbfbfb;
+  font-size: 16px;
+  line-height:150%;
 
-img
-  max-width:100%
 
-hr
-  color:lightgrey;
-  width:70%;
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Tajawal'), local('Tajawal-Regular'),
+    url(./tajawal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
 
-a
-  color: #6699cc
-  cursor:pointer
-  text-decoration: underline
-  &:hover
-    text-decoration-color:#cc7066
+body {
+  font-family: 'Tajawal';
+  font-size: 1.2rem;
+  background-color: #fbfbfb;
+}
 
-.center
-  text-align:center;
-.left
-  text-align:left;
-.right
-  text-align:right;
 
-.footer
-  margin: auto 1rem 1rem auto;
-  padding:0.5rem;
-  justify-content: flex-end;
-  align-content: flex-end;
-  align-items: flex-end;
-
-.stage
+.main
+  margin: 0 auto;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  max-width: 1080px;
   display:flex;
   flex-direction: column !important;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   text-align:left;
   flex-wrap: wrap;
-  margin:1.5rem;
-  padding:1.5rem;
   flex:1;
-  width:80%
-  // max-width:38.44125rem; //w10
-  max-width:57.661875rem;  //w11
-  min-width:17.085rem
-  @media screen and (max-width: 25.6275rem)
-    margin:0px;
+  color: #333333;
 
-.stage-title
-  left:16%;
-  transition: left .3s;
-  align-self:flex-start;
-  margin-bottom:-1rem;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  background-color:#fbfbfb;
-  top: 0;
-  @media screen and (max-width: 115rem)
-    left:10%
-  @media screen and (max-width: 90rem)
-    left:7.5%
-  @media screen and (max-width: 75rem)
-    left:0%
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
+  
+space
+  margin-top:4rem;
+  margin-bottom:4rem;
+
+.left
+  align-self: flex-start;
+.right
+  align-self: flex-end;
+.center
+  align-self: center;
+
+a
+  color: #6699cc
+  text-decoration: none
+  cursor:pointer
+  &:hover
+    border-bottom:2px solid #6699cc
+
+img
+  margin:1.2rem;
+  max-width:100%
+  border-radius:3px
+  box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+  align-self: center;
+
+h2
+  margin:8rem 2rem 1rem 0rem;
+  padding:0rem 1rem 0rem 1rem;
+  line-height:100%;
+  color:#4d4d4d
+  font-size: 2.4em;
+  font-weight: 100;
+  border-left:5px solid #6699cc;
